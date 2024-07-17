@@ -5,7 +5,6 @@ import {
   Flex,
   Heading,
   Image,
-  SimpleGrid,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -30,14 +29,10 @@ export default function Products() {
           lama, dan keren untuk memenuhi kebutuhan sehari-hari.
         </Text>
       </Box>
-      <SimpleGrid
-        templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
-        mt={6}
-        gap={4}
-      >
-        <Card maxW="xs">
+      <Flex mt={6} gap={4} direction={{ base: "column", md: "row" }}>
+        <Card>
           <CardBody>
-            <Image src="/susu.jpg" alt="Susu" borderRadius="lg" />
+            <Image w="200px" src="/susu.jpg" alt="Susu" borderRadius="lg" />
             <Stack mt="6" spacing="3">
               <Heading size="md">Susu</Heading>
               <Text color="blue.600" fontSize="2xl">
@@ -46,9 +41,9 @@ export default function Products() {
             </Stack>
           </CardBody>
         </Card>
-        <Card maxW="xs">
+        <Card>
           <CardBody>
-            <Image src="/roti.jpg" alt="Roti" borderRadius="lg" />
+            <Image w="200px" src="/roti.jpg" alt="Roti" borderRadius="lg" />
             <Stack mt="6" spacing="3">
               <Heading size="md">Roti</Heading>
               <Text color="blue.600" fontSize="2xl">
@@ -57,9 +52,9 @@ export default function Products() {
             </Stack>
           </CardBody>
         </Card>
-        <Card maxW="xs">
+        <Card>
           <CardBody>
-            <Image src="/keju.jpg" alt="Keju" borderRadius="lg" />
+            <Image w="200px" src="/keju.jpg" alt="Keju" borderRadius="lg" />
             <Stack mt="6" spacing="3">
               <Heading size="md">Keju</Heading>
               <Text color="blue.600" fontSize="2xl">
@@ -68,7 +63,7 @@ export default function Products() {
             </Stack>
           </CardBody>
         </Card>
-      </SimpleGrid>
+      </Flex>
     </Flex>
   );
 }

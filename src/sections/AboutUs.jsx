@@ -29,7 +29,7 @@ export default function AboutUs() {
       <AspectRatio
         p={2}
         my={2}
-        w={{ base: "400px", md: "550px", lg: "750px" }}
+        w={{ base: "350px", md: "550px", lg: "750px" }}
         ratio={16 / 9}
       >
         <iframe

@@ -1,5 +1,6 @@
 import {
   Box,
+  Center,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
@@ -39,9 +40,11 @@ export default function Navbar() {
         as="nav"
         justify={"space-between"}
       >
-        <Heading pt={{ base: 0, lg: 2 }} color="teal">
-          <Link href="#">Sigmart</Link>
-        </Heading>
+        <Center>
+          <Heading color="teal">
+            <Link href="#">Sigmart</Link>
+          </Heading>
+        </Center>
         <Show below="sm">
           <IconButton
             ref={btnRef}

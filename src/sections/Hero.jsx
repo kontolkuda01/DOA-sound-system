@@ -36,7 +36,7 @@ export default function Hero() {
           direction="column"
           justify="center"
         >
-          <Heading my={2}>
+          <Heading size={{ base: "lg", md: "xl" }} my={2}>
             Pilihan Hebat dan Smart?
             <br />
             <Highlight

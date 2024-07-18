@@ -1,18 +1,12 @@
 import {
-  Avatar,
   Box,
   Button,
-  Card,
-  CardBody,
-  CardHeader,
-  Container,
   Flex,
   FormControl,
   FormHelperText,
   FormLabel,
   Heading,
   Input,
-  SimpleGrid,
   Text,
   Textarea,
 } from "@chakra-ui/react";

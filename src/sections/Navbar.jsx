@@ -39,7 +39,7 @@ export default function Navbar() {
         as="nav"
         justify={"space-between"}
       >
-        <Heading color="teal">
+        <Heading pt={{ base: 0, md: 1 }} color="teal">
           <Link href="#">Sigmart</Link>
         </Heading>
         <Show below="sm">

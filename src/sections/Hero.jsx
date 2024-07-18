@@ -29,7 +29,7 @@ export default function Hero() {
       >
         <Flex
           bg="gray.50"
-          m={{ md: 8 }}
+          my={8}
           p={8}
           boxShadow="lg"
           rounded="xl"

@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <Flex
       id="about"
-      sx={sectionStyle}
+      sx={{ ...sectionStyle, mt: 6 }}
       as="section"
       alignItems="center"
       direction="column"
@@ -13,9 +13,9 @@ export default function AboutUs() {
       <Heading p={2} size={{ base: "sm", md: "md" }} color="teal.400">
         Tentang Kami
       </Heading>
-      <Heading p={2}>Siapa kita sebenarnya?</Heading>
+      <Heading p={2}>Siapa kami sebenarnya?</Heading>
       <Box p={2} w={{ md: "500px", lg: "750px" }}>
-        <Text align="center">
+        <Text align="justify" style={{ textAlignLast: "center" }}>
           Sigmart adalah supermarket yang saat ini sedang aktif di Planet
           Galaxy. Memiliki reputasi yang baik dengan pelanggan yang banyak,
           membuat banyak orang yang tertarik untuk berbelanja di sana. Dengan
@@ -37,7 +37,6 @@ export default function AboutUs() {
           height="315"
           src="https://www.youtube.com/embed/Tqgr19ze03Q?si=6IRCCFNlpxFD9dc1"
           title="Jingle Sigmart"
-          frameBorder="0"
           allow="accelerometer; autoplay;
         clipboard-write; encrypted-media; gyroscope; picture-in-picture;
         web-share"
@@ -48,4 +47,3 @@ export default function AboutUs() {
     </Flex>
   );
 }
-

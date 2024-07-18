@@ -1,5 +1,4 @@
 import {
-  Container,
   Button,
   Center,
   Divider,
@@ -7,7 +6,6 @@ import {
   Heading,
   Highlight,
   Icon,
-  Image,
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
@@ -16,15 +14,28 @@ import { sectionStyle } from "../lib";
 
 export default function Hero() {
   return (
-    <Center>
+    <Center
+      bgImg={'url("/bg-hero.jpg")'}
+      bgPos="top center"
+      bgRepeat="no-repeat"
+      bgSize="cover"
+    >
       <SimpleGrid
         as="section"
         id="#"
-        columns={{ sm: 1, md: 2 }}
+        columns={1}
         spacing={4}
-        sx={{ ...sectionStyle, maxW: "69rem", minH: "30rem" }}
+        sx={{ ...sectionStyle, minH: "20rem", maxW: "51rem" }}
       >
-        <Flex direction="column" justify="center">
+        <Flex
+          bg="gray.50"
+          m={8}
+          p={8}
+          boxShadow="lg"
+          rounded="xl"
+          direction="column"
+          justify="center"
+        >
           <Heading my={2}>
             Pilihan Hebat dan Smart?
             <br />
@@ -44,9 +55,6 @@ export default function Hero() {
             Beli sekarang!
           </Button>
         </Flex>
-        <Center>
-          <Image src="/sigmart-banner.png" />
-        </Center>
       </SimpleGrid>
     </Center>
   );

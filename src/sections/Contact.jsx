@@ -128,6 +128,10 @@ export default function Contact() {
                 Bersihkan
               </Button>
             )}
+
+            <Text fontSize="xs" my={2} color="gray.800">
+              * tombol hanya akan muncul ketika semua kolom terisi.
+            </Text>
           </Box>
         </Flex>
       </Flex>

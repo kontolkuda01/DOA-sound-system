@@ -37,7 +37,7 @@ export default function Products() {
       >
         <Card>
           <CardHeader>
-            <Avatar src="/birjon.jpg" mb={2} />
+            <Avatar src="/assets/birjon.jpg" mb={2} />
             <Heading size="md">Legenda Birjon</Heading>
           </CardHeader>
           <CardBody>
@@ -49,7 +49,7 @@ export default function Products() {
         </Card>
         <Card>
           <CardHeader>
-            <Avatar src="/kobra.jpg" mb={2} />
+            <Avatar src="/assets/kobra.jpg" mb={2} />
             <Heading size="md">Kobo Kanaeru</Heading>
           </CardHeader>
           <CardBody>

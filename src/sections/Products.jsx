@@ -32,7 +32,12 @@ export default function Products() {
       <Flex mt={6} gap={4} direction={{ base: "column", md: "row" }}>
         <Card>
           <CardBody>
-            <Image w="200px" src="/susu.jpg" alt="Susu" borderRadius="lg" />
+            <Image
+              w="200px"
+              src="/assets/susu.jpg"
+              alt="Susu"
+              borderRadius="lg"
+            />
             <Stack mt="6" spacing="3">
               <Heading size="md">Susu</Heading>
               <Text color="blue.600" fontSize="2xl">
@@ -43,7 +48,12 @@ export default function Products() {
         </Card>
         <Card>
           <CardBody>
-            <Image w="200px" src="/roti.jpg" alt="Roti" borderRadius="lg" />
+            <Image
+              w="200px"
+              src="/assets/roti.jpg"
+              alt="Roti"
+              borderRadius="lg"
+            />
             <Stack mt="6" spacing="3">
               <Heading size="md">Roti</Heading>
               <Text color="blue.600" fontSize="2xl">
@@ -54,7 +64,12 @@ export default function Products() {
         </Card>
         <Card>
           <CardBody>
-            <Image w="200px" src="/keju.jpg" alt="Keju" borderRadius="lg" />
+            <Image
+              w="200px"
+              src="/assets/keju.jpg"
+              alt="Keju"
+              borderRadius="lg"
+            />
             <Stack mt="6" spacing="3">
               <Heading size="md">Keju</Heading>
               <Text color="blue.600" fontSize="2xl">

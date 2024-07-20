@@ -15,7 +15,7 @@ import { sectionStyle } from "../lib";
 export default function Hero() {
   return (
     <Center
-      bgImg={'url("/bg-hero.jpg")'}
+      bgImg={'url("/assets/bg-hero.jpg")'}
       bgPos="top center"
       bgRepeat="no-repeat"
       bgSize="cover"

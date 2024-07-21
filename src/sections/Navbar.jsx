@@ -45,14 +45,14 @@ export default function Navbar() {
             <Link href="#">Sigmart</Link>
           </Heading>
         </Center>
-        <Show below="sm">
+        <Show below="md">
           <IconButton
             ref={btnRef}
             onClick={onOpen}
             icon={<HamburgerIcon color="teal" />}
           />
         </Show>
-        <Show above="sm">
+        <Show above="md">
           <Flex color="teal" justify="space-between">
             <Link href="#about" p={4}>
               Tentang Kami

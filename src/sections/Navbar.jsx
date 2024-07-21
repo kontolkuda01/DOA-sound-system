@@ -24,6 +24,7 @@ export default function Navbar() {
       <Flex
         position="fixed"
         bg="gray.100"
+        _dark={{ bg: "gray.700", color: "gray.50" }}
         top={0}
         right={0}
         left={0}

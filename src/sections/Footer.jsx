@@ -6,7 +6,7 @@ export default function Footer() {
     <Flex
       direction="column"
       _dark={{ bg: "gray.700" }}
-      sx={{ ...sectionStyle, bg: "gray.800", color: "gray.50" }}
+      sx={{ ...sectionStyle, py: 6, bg: "gray.800", color: "gray.50" }}
     >
       <Heading color="teal">Sigmart</Heading>
       <List my={4}>

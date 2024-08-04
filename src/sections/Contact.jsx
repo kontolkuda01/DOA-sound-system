@@ -48,7 +48,7 @@ export default function Contact() {
         direction="column"
       >
         <Heading p={2} size={{ base: "sm", md: "md" }} color="teal.400">
-          Kontak Kami
+          Hubungi Kami
         </Heading>
         <Heading p={2}>Kami menunggumu!</Heading>
         <Box p={2} w={{ md: "500px", lg: "750px" }}>

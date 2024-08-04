@@ -12,6 +12,23 @@ import {
 import { sectionStyle } from "../lib";
 
 export default function Products() {
+  const datas = [
+    {
+      profile: "/assets/birjon.jpg",
+      author: "Legenda Birjon",
+      text: "Harganya murah, barang yang saya dapatkan juga selalu ada, pokoknya mantap lahh!!!",
+    },
+    {
+      profile: "/assets/kobra.jpg",
+      author: "Kobo Kanaeru",
+      text: "Barangnya lengkap, tapi nggak ada ciki sama koyo.",
+    },
+    {
+      profile: "",
+      author: "Dapa",
+      text: "Layoutnya dulu berantakan. Tetapi setelah menjadi donatur, layout di Sigmart jadi enak dilihat.",
+    },
+  ];
   return (
     <Flex
       as="section"
@@ -35,41 +52,17 @@ export default function Products() {
         spacing={4}
         templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
       >
-        <Card>
-          <CardHeader>
-            <Avatar src="/assets/birjon.jpg" mb={2} />
-            <Heading size="md">Legenda Birjon</Heading>
-          </CardHeader>
-          <CardBody>
-            <Text>
-              &quot;Harganya murah, barang yang saya dapatkan juga selalu ada,
-              pokoknya mantap lahh!!!&quot;
-            </Text>
-          </CardBody>
-        </Card>
-        <Card>
-          <CardHeader>
-            <Avatar src="/assets/kobra.jpg" mb={2} />
-            <Heading size="md">Kobo Kanaeru</Heading>
-          </CardHeader>
-          <CardBody>
-            <Text>
-              &quot;Barangnya lengkap, tapi nggak ada ciki sama koyo.&quot;
-            </Text>
-          </CardBody>
-        </Card>
-        <Card>
-          <CardHeader>
-            <Avatar mb={2} />
-            <Heading size="md">Dapa</Heading>
-          </CardHeader>
-          <CardBody>
-            <Text>
-              &quot;Layoutnya dulu berantakan. Tetapi setelah menjadi donatur,
-              layout di Sigmart jadi enak dilihat.&quot;
-            </Text>
-          </CardBody>
-        </Card>
+        {datas.map((el, i) => (
+          <Card key={i}>
+            <CardHeader>
+              <Avatar src={el.profile} mb={2} />
+              <Heading size="md">{el.author}</Heading>
+            </CardHeader>
+            <CardBody>
+              <Text>&quot;{el.text}&quot;</Text>
+            </CardBody>
+          </Card>
+        ))}
       </SimpleGrid>
     </Flex>
   );

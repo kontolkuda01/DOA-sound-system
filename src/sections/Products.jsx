@@ -11,6 +11,12 @@ import {
 import { sectionStyle } from "../lib";
 
 export default function Products() {
+  const datas = [
+    { name: "Susu", price: 4500, img: "/assets/susu.jpg" },
+    { name: "Roti", price: 5000, img: "/assets/roti.jpg" },
+    { name: "Keju", price: 5500, img: "/assets/keju.jpg" },
+  ];
+
   return (
     <Flex
       as="section"
@@ -30,54 +36,19 @@ export default function Products() {
         </Text>
       </Box>
       <Flex mt={6} gap={4} direction={{ base: "column", md: "row" }}>
-        <Card>
-          <CardBody>
-            <Image
-              w="200px"
-              src="/assets/susu.jpg"
-              alt="Susu"
-              borderRadius="lg"
-            />
-            <Stack mt="6" spacing="3">
-              <Heading size="md">Susu</Heading>
-              <Text color="blue.600" fontSize="2xl">
-                $4500
-              </Text>
-            </Stack>
-          </CardBody>
-        </Card>
-        <Card>
-          <CardBody>
-            <Image
-              w="200px"
-              src="/assets/roti.jpg"
-              alt="Roti"
-              borderRadius="lg"
-            />
-            <Stack mt="6" spacing="3">
-              <Heading size="md">Roti</Heading>
-              <Text color="blue.600" fontSize="2xl">
-                $5000
-              </Text>
-            </Stack>
-          </CardBody>
-        </Card>
-        <Card>
-          <CardBody>
-            <Image
-              w="200px"
-              src="/assets/keju.jpg"
-              alt="Keju"
-              borderRadius="lg"
-            />
-            <Stack mt="6" spacing="3">
-              <Heading size="md">Keju</Heading>
-              <Text color="blue.600" fontSize="2xl">
-                $5500
-              </Text>
-            </Stack>
-          </CardBody>
-        </Card>
+        {datas.map((el, i) => (
+          <Card key={i}>
+            <CardBody>
+              <Image w="200px" src={el.img} alt={el.name} borderRadius="lg" />
+              <Stack mt="6" spacing="3">
+                <Heading size="md">{el.name}</Heading>
+                <Text color="blue.600" fontSize="2xl">
+                  ${el.price}
+                </Text>
+              </Stack>
+            </CardBody>
+          </Card>
+        ))}
       </Flex>
     </Flex>
   );

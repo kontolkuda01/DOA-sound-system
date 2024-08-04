@@ -19,6 +19,12 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
+  const menus = [
+    { title: "Tentang Kami", link: "#about" },
+    { title: "Produk", link: "#product" },
+    { title: "Testimoni", link: "#testimonial" },
+    { title: "Hubungi Kami", link: "#contact" },
+  ];
   return (
     <Box position="relative" zIndex={2}>
       <Flex
@@ -55,18 +61,11 @@ export default function Navbar() {
         </Show>
         <Show above="md">
           <Flex color="teal" justify="space-between">
-            <Link href="#about" p={4}>
-              Tentang Kami
-            </Link>
-            <Link href="#product" p={4}>
-              Produk
-            </Link>
-            <Link href="#testimonial" p={4}>
-              Testimoni
-            </Link>
-            <Link href="#contact" p={4}>
-              Hubungi Kami
-            </Link>
+            {menus.map((el, i) => (
+              <Link key={i} href={el.link} p={4}>
+                {el.title}
+              </Link>
+            ))}
           </Flex>
         </Show>
       </Flex>
@@ -86,18 +85,11 @@ export default function Navbar() {
               <Heading p={4} color="teal">
                 Sigmart
               </Heading>
-              <Link href="#about" p={4}>
-                Tentang Kami
-              </Link>
-              <Link href="#product" p={4}>
-                Produk
-              </Link>
-              <Link href="#testimonial" p={4}>
-                Testimoni
-              </Link>
-              <Link href="#contact" p={4}>
-                Hubungi Kami
-              </Link>
+              {menus.map((el, i) => (
+                <Link key={i} href={el.link} p={4}>
+                  {el.title}
+                </Link>
+              ))}
             </Flex>
           </DrawerBody>
         </DrawerContent>

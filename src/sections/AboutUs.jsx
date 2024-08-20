@@ -1,6 +1,9 @@
 import { AspectRatio, Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { sectionStyle } from "../lib";
 
+import Youtube from "react-lazyload-youtube";
+import "react-lazyload-youtube/dist/index.css";
+
 export default function AboutUs() {
   return (
     <Flex
@@ -32,17 +35,7 @@ export default function AboutUs() {
         w={{ base: "350px", md: "550px", lg: "750px" }}
         ratio={16 / 9}
       >
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Tqgr19ze03Q?si=6IRCCFNlpxFD9dc1"
-          title="Jingle Sigmart"
-          allow="accelerometer; autoplay;
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <Youtube videoId="Tqgr19ze03Q" />
       </AspectRatio>
     </Flex>
   );

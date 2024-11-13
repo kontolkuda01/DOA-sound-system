@@ -38,14 +38,14 @@ export default function Hero() {
           justify="center"
         >
           <Heading size={{ base: "lg", md: "xl" }} my={2}>
-            Pilihan Hebat dan Smart?
-            <br />
             <Highlight
-              query="Sigmart solusinya!"
+              query="DOA Sound System,"
               styles={{ color: "teal.400" }}
             >
-              Sigmart solusinya!
+              DOA Sound System,
             </Highlight>
+            Pilihan Tepat untuk Acara Hebat!
+            <br />
           </Heading>
           <Text my={2}>
             Dapatkan barang-barang asli yang berkualitas, tahan lama, dan keren

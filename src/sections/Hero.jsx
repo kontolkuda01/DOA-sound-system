@@ -9,7 +9,6 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import { FaBagShopping } from "react-icons/fa6";
 import { sectionStyle } from "../lib";
 
 export default function Hero() {
@@ -38,23 +37,21 @@ export default function Hero() {
           justify="center"
         >
           <Heading size={{ base: "lg", md: "xl" }} my={2}>
-            <Highlight
-              query="DOA Sound System,"
-              styles={{ color: "teal.400" }}
-            >
+            <Highlight query="DOA Sound System," styles={{ color: "blue.400" }}>
               DOA Sound System,
             </Highlight>
+            <br />
             Pilihan Tepat untuk Acara Hebat!
             <br />
           </Heading>
           <Text my={2}>
-            Dapatkan barang-barang asli yang berkualitas, tahan lama, dan keren
-            untuk memenuhi kebutuhan sehari-harimu, di Sigmart!
+            Buat acara spesial makin berkesan dengan layanan terbaik dari DOA
+            Sound System! Tratak dan sound system berkualitas, plafon sesuai
+            selera. DOA Sound System, solusi hajatan tanpa ribet, kualitas
+            terjamin!
           </Text>
           <Divider my={2} orientation="horizontal" />
-          <Button colorScheme="teal" leftIcon={<Icon as={FaBagShopping} />}>
-            Beli sekarang!
-          </Button>
+          <Button colorScheme="blue">Pesan sekarang!</Button>
         </Flex>
       </SimpleGrid>
     </Center>

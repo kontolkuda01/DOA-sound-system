@@ -7,10 +7,10 @@ import {
   DrawerContent,
   DrawerOverlay,
   Flex,
-  Heading,
   IconButton,
   Link,
   Show,
+  Image,
   useDisclosure,
 } from "@chakra-ui/react";
 import { useRef } from "react";
@@ -22,8 +22,6 @@ export default function Navbar() {
   const menus = [
     { title: "Tentang Kami", link: "#about" },
     { title: "Produk", link: "#product" },
-    { title: "Testimoni", link: "#testimonial" },
-    { title: "Hubungi Kami", link: "#contact" },
   ];
   return (
     <Box position="relative" zIndex={2}>
@@ -48,19 +46,19 @@ export default function Navbar() {
         justify={"space-between"}
       >
         <Center>
-          <Heading color="teal">
-            <Link href="#">Sigmart</Link>
-          </Heading>
+          <Image src="/assets/logo.png" height={14} />
         </Center>
         <Show below="md">
-          <IconButton
-            ref={btnRef}
-            onClick={onOpen}
-            icon={<HamburgerIcon color="teal" />}
-          />
+          <Center>
+            <IconButton
+              ref={btnRef}
+              onClick={onOpen}
+              icon={<HamburgerIcon color="blue" />}
+            />
+          </Center>
         </Show>
         <Show above="md">
-          <Flex color="teal" justify="space-between">
+          <Flex color="blue" justify="space-between">
             {menus.map((el, i) => (
               <Link key={i} href={el.link} p={4}>
                 {el.title}
@@ -82,9 +80,9 @@ export default function Navbar() {
 
           <DrawerBody>
             <Flex direction="column">
-              <Heading p={4} color="teal">
-                Sigmart
-              </Heading>
+              <Box>
+                <Image src="/assets/logo.png" height={14} />
+              </Box>
               {menus.map((el, i) => (
                 <Link key={i} href={el.link} p={4}>
                   {el.title}

@@ -13,21 +13,21 @@ export default function AboutUs() {
       alignItems="center"
       direction="column"
     >
-      <Heading p={2} size={{ base: "sm", md: "md" }} color="teal.400">
+      <Heading p={2} size={{ base: "sm", md: "md" }} color="blue.400">
         Tentang Kami
       </Heading>
       <Heading p={2}>Siapa kami sebenarnya?</Heading>
       <Box p={2} w={{ md: "500px", lg: "750px" }}>
         <Text align="justify" style={{ textAlignLast: "center" }}>
-          Sigmart adalah supermarket yang saat ini sedang aktif di Planet
-          Galaxy. Memiliki reputasi yang baik dengan pelanggan yang banyak,
-          membuat banyak orang yang tertarik untuk berbelanja di sana. Dengan
-          Alfachri sebagai bos dan Adit sebagai pegawai kasir, kini mereka
-          bersama-sama telah mengungguli supermarket yang ada di Planet Galaxy.
+          DOA Sound System menyediakan seluruh kebutuhan acara kamu mulai dari
+          hajatan, sunatan dan lainnya. Menyediakan berbagai jenis sound system,
+          tratak dan plafon, kursi dan meja acara hingga set prasmanan dengan
+          harga yang relatif terjangkau. Serahkan kebutuhan hajatan anda kepada
+          kami, biar DOA Sound System yang urus semuanya!
         </Text>
       </Box>
       <Heading p={2} mt={8}>
-        Jingle kami
+        Layanan kami
       </Heading>
       <AspectRatio
         p={2}
@@ -35,7 +35,7 @@ export default function AboutUs() {
         w={{ base: "350px", md: "550px", lg: "750px" }}
         ratio={16 / 9}
       >
-        <Youtube videoId="Tqgr19ze03Q" />
+        <Youtube videoId="Cn34B65Tx3E" />
       </AspectRatio>
     </Flex>
   );

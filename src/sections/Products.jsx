@@ -12,9 +12,9 @@ import { sectionStyle } from "../lib";
 
 export default function Products() {
   const datas = [
-    { name: "Susu", price: 4500, img: "/assets/susu.jpg" },
-    { name: "Roti", price: 5000, img: "/assets/roti.jpg" },
-    { name: "Keju", price: 5500, img: "/assets/keju.jpg" },
+    { name: "Tratak dan Plafon", img: "/assets/tratak.jpg" },
+    { name: "Sound System", img: "/assets/sound.jpg" },
+    { name: "Set Prasmanan", img: "/assets/prasmanan.jpg" },
   ];
 
   return (
@@ -25,14 +25,14 @@ export default function Products() {
       alignItems="center"
       direction="column"
     >
-      <Heading p={2} size={{ base: "sm", md: "md" }} color="teal.400">
+      <Heading p={2} size={{ base: "sm", md: "md" }} color="blue.400">
         Produk Kami
       </Heading>
-      <Heading p={2}>Apa yang kami jual?</Heading>
+      <Heading p={2}>Apa yang kami sewakan?</Heading>
       <Box p={2} w={{ md: "500px", lg: "750px" }}>
         <Text align="center">
-          Kami menyediakan produk-produk asli yang berkualitas tinggi, tahan
-          lama, dan keren untuk memenuhi kebutuhan sehari-hari.
+          Kami menyediakan sound system, tratak, plafon, kursi meja, hingga set
+          prasmanan untuk memenuhi kebutuhan hajatanmu.
         </Text>
       </Box>
       <Flex mt={6} gap={4} direction={{ base: "column", md: "row" }}>
@@ -42,9 +42,6 @@ export default function Products() {
               <Image w="200px" src={el.img} alt={el.name} borderRadius="lg" />
               <Stack mt="6" spacing="3">
                 <Heading size="md">{el.name}</Heading>
-                <Text color="blue.600" fontSize="2xl">
-                  ${el.price}
-                </Text>
               </Stack>
             </CardBody>
           </Card>

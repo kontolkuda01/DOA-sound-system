@@ -21,7 +21,8 @@ export default function Navbar() {
   const btnRef = useRef();
   const menus = [
     { title: "Tentang Kami", link: "#about" },
-    { title: "Produk", link: "#product" },
+    { title: "Produk Kami", link: "#product" },
+    { title: "Hubungi Kami", link: "#contact" },
   ];
   return (
     <Box position="relative" zIndex={2}>
